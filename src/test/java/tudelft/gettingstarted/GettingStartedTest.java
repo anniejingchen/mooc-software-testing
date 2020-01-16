@@ -21,6 +21,12 @@ public class GettingStartedTest {
 
     @Test
     public void addFiveToMinus20() {
+        int result = new GettingStarted().addFive(-20);
+        Assertions.assertEquals(-15, result);
+    }
+
+    @Test
+    public void addFiveToMinus1() {
         int result = new GettingStarted().addFive(-1);
         Assertions.assertEquals(4, result);
     }
